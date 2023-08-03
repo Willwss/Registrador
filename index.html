@@ -5,9 +5,16 @@
     <title>Exportar para CSV</title>
   </head>
   <body>
+
+    <div class="links">
+      <a href="https://github.com/Willwss">Meu Git Hub</a>
+      
+      <a href="https://github.com/Willwss/Registrador">Codigo Fonte do projeto no github</a>
+    </div>
+
     <div class="container">
       <div>
-        <form id="dataForm">
+        <form id="dataForm" action="/salvar-dados" method="POST">
           <label for="nameInput">Nome:</label>
           <input type="text" id="nameInput" required><br><br>
           <label for="priceInput">Preço:</label>
@@ -33,12 +40,11 @@
           <input type="submit" value="Exportar para CSV">
         </form>
       </div>
-
-      <div class="explanation">
-        Esta página permite que você insira informações sobre um produto, incluindo nome, preço, produto, CPF e telefone. Depois de inserir o preço, selecione a quantidade de parcelas desejada na lista de opções. Quando estiver pronto para exportar os dados para uma planilha CSV, insira o nome do arquivo CSV no campo apropriado e clique no botão "Exportar para CSV". Os dados serão baixados automaticamente em um arquivo CSV com o nome especificado.
-      </div>
+      
     </div>
 
     <script src="brain.js"></script>
+    <script src="conectdb.js"></script>
+
   </body>
 </html>

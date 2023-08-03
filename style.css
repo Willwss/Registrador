@@ -1,67 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
 
-  .container {
-    display: flex;
-    max-width: 800px;
-    margin: 20px auto;
-  }
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
 
-  .container > div {
-    flex: 1;
-    margin: 10px;
-  }
+.links a {
+  color: #000;
+  text-decoration: none;
+}
 
-  form {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+.links a:hover {
+  text-decoration: underline;
+}
 
-  form label {
-    display: block;
-    margin-bottom: 10px;
-  }
 
-  form input[type="text"],
-  form input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-  }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: none;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-  }
+form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
 
-  form input[type="submit"] {
+input[type="text"],
+input[type="number"],
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.explanation {
+    margin-top: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
   }
 
-  form input[type="submit"]:hover {
-      background-color: #45a049;
-  }
-
-  .explanation {
-    padding: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
+  input[type="text"],
+  input[type="number"],
+  select {
+    width:100%;
+    font-size:16px
+}
+}
