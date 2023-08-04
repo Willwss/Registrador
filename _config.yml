@@ -1,2 +1,4 @@
 title: Download de dados para CSV
-description: Site que pega os dados informados nos campo e cria um arquivo CSV com os dados informados, você pode adicionar quantas informações quiser clicando apenas em (adicionar), isso irá adicionar os dados na planilha e deixara salvo até você definitivamente baixar.
+description: Transformando dados do formulário em arquivo CSV.
+github_username: Willss
+url: https://willwss.github.io/Registrador/
