@@ -1,5 +1,3 @@
-//const connection = require('./conectdb');
-
 let data = [
     ["Nome", "Preço", "Produto", "CPF", "Telefone", "Parcelas"]
   ];

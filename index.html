@@ -7,9 +7,9 @@
   <body>
     <div class="container">
       <div>
-        <form id="dataForm" action="/salvar-dados" method="POST">
+        <form id="dataForm" action="/salvar-dados">
           <label for="nameInput">Nome:</label>
-          <input type="text" id="nameInput" required><br><br>
+          <input type="text"  id="nameInput" required><br><br>
           <label for="priceInput">Preço:</label>
           <input type="number" id="priceInput" required><br><br>
           <label for="prodInput">Produto:</label>
@@ -30,7 +30,11 @@
         <form id="exportForm">
           <label for="filenameInput">Nome do arquivo CSV:</label>
           <input type="text" id="filenameInput" required><br><br>
+
+
           <input type="submit" value="Exportar para CSV">
+
+          
           <button><a href="https://github.com/Willwss">Meu Git Hub</a></button>
           <button><a href="https://github.com/Willwss/Registrador">Codigo Fonte do projeto no github</a></button>
         </form>
